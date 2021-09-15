@@ -4,7 +4,8 @@ import { PhonebookModule } from './phonebook/phonebook.module';
 
 @Module({
 	imports: [
-		MongooseModule.forRoot("mongodb://localhost:27017/PHONEBOOK_DB", { autoCreate: true }),
+		//mongodb+srv://Jali:mnisikamatla@cluster0.mbspu.mongodb.net/phoneBook?retryWrites=true&w=majority
+		MongooseModule.forRoot("mongodb+srv://Jali:mnisikamatla@cluster0.mbspu.mongodb.net/phoneBook?retryWrites=true&w=majority", { autoCreate: true }),
 		PhonebookModule,
 	],
 	controllers: [],
